@@ -25,7 +25,7 @@
   <!-- 상단 네비게이션 / 헤더 -->
   <header class="app-header">
     <div class="logo-wrapper">
-      <img src="img/logo.png" alt="서비스 로고" class="logo-img" id="logoImg" onerror="this.style.display='none'">
+      <img src="logo.png" alt="서비스 로고" class="logo-img" id="logoImg" onerror="if(this.getAttribute('data-tried')!=='1'){this.setAttribute('data-tried','1');this.src='img/logo.png';}">
       <div class="logo-text">
         <span class="logo-title">QR Studio</span>
         <span class="logo-badge">PRO</span>
@@ -141,7 +141,7 @@
       </div>
       <div class="corgi-actor" id="corgiActor">
         <div class="corgi-frame">
-          <img src="img/corgi.jpg" alt="귀여운 웰시코기" class="corgi-img" id="corgiImg">
+          <img src="corgi.jpg" alt="귀여운 웰시코기" class="corgi-img" id="corgiImg" onerror="if(this.getAttribute('data-tried')!=='1'){this.setAttribute('data-tried','1');this.src='img/corgi.jpg';}">
         </div>
         <div class="corgi-shadow"></div>
       </div>
